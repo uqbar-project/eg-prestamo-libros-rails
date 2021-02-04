@@ -3,6 +3,7 @@ class Prestamo < ApplicationRecord
   belongs_to :persona
 
   def devolver
-    @fecha_devolucion = Date.new
+    self.fecha_devolucion = Time.zone.now.to_datetime
   end
+
 end

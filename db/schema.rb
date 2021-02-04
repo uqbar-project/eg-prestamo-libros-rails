@@ -12,23 +12,23 @@
 
 ActiveRecord::Schema.define(version: 2021_02_01_205205) do
 
-  create_table "libros", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "libros", force: :cascade do |t|
     t.string "titulo"
     t.string "autor"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "personas", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "personas", force: :cascade do |t|
     t.string "nombre"
     t.boolean "activo", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "prestamos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "libro_id"
-    t.bigint "persona_id"
+  create_table "prestamos", force: :cascade do |t|
+    t.integer "libro_id"
+    t.integer "persona_id"
     t.datetime "fecha_devolucion"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
