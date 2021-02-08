@@ -1,24 +1,8 @@
-# README
+# Préstamos de libros (Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta aplicación muestra cómo funciona la arquitectura Rails con Active Record para el ejemplo Préstamo de Libros, en la versión 6.0.3. Se debe levantar en el puerto 8080.
 
-Things you may want to cover:
+## Frontend
 
-* Ruby version
+El proyecto con la UI desarrollada en React se puede descargar en [este link](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fuqbar-project%2Feg-libros-react&sa=D&sntz=1&usg=AFQjCNHJDowaI5QDgYnJlFvMbjsoABnhUg)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
