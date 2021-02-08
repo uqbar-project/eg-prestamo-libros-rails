@@ -34,4 +34,12 @@ module PrestamoLibros
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
   end
+
+  Rails.application.config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins '*'
+      resource '*', headers: :any, methods: [:get, :post, :patch, :put]
+    end
+  end
+
 end
